@@ -41,48 +41,8 @@
           </a>
           <ul class="treeview-menu">
             <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
-            <li class="treeview">
-              <a href="#"><i class="fa fa-circle-o"></i> Tindakan
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="<?= base_url('tindakan'); ?>"><i class="fa fa-circle-o"></i> Master Data Tindakan</a></li>
-                <li><a href="<?= base_url('biaya'); ?>"><i class="fa fa-circle-o"></i> Biaya Tindakan Per-Kelas</a></li>
-                <li><a href="<?= base_url('diagnosa'); ?>"><i class="fa fa-circle-o"></i> Diagnosa</a></li>
-                <li><a href="<?= base_url('asuransi'); ?>"><i class="fa fa-circle-o"></i> Diagnosa (Asuransi)</a></li>
-                <li><a href="<?= base_url('TarifAsuransi'); ?>"><i class="fa fa-circle-o"></i> Tarif Per-Level Asuransi</a></li>
-                <li><a href="<?= base_url('TindakanDiagnosa'); ?>"><i class="fa fa-circle-o"></i> Tindakan Diagnosa (Asuransi)</a></li>
-                <!-- <li class="treeview">
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                  </ul>
-                </li> -->
-              </ul>
-            </li>
-            <li class="treeview">
-                  <a href="#"><i class="fa fa-circle-o"></i> Rawat Inap
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li><a href=" <?php echo base_url('nurse-station'); ?>"><i class="fa fa-circle-o"></i> Nurse Station</a></li>
-                    <li><a href=" <?php echo base_url('kelas'); ?>"><i class="fa fa-circle-o"></i> Kelas</a></li>
-                    <li><a href="<?php echo base_url('kamar'); ?>"><i class="fa fa-circle-o"></i> Kamar</a></li>
-                    <li><a href="<?php echo base_url('bed'); ?>"><i class="fa fa-circle-o"></i> Bed</a></li>
-                    <li><a href="<?php echo base_url('penunjang'); ?>"><i class="fa fa-circle-o"></i> Penunjang</a></li>
-                    <li><a href="<?php echo base_url('kategori'); ?>"><i class="fa fa-circle-o"></i> Kategori Penunjang</a></li>
-                  </ul>
-                </li>
-            <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
+            <li><a href="daftar-data-tindakan"><i class="fa fa-circle-o"></i> Tindakan/Diagnosa</a></li>
+			<li><a href="daftar-data-tindakan"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
           </ul>
         </li>
         <!--  <li class="treeview active">

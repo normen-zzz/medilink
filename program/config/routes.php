@@ -11,7 +11,11 @@ $route['logout-system'] = 'masuk/logout';
 
 //Master
 $route['tambah-user'] = 'master/master';
-$route['tindakan'] = 'master/tindakan';
+
+//master-medis
+$route['daftar-data-tindakan'] = 'master/master_medis';
+$route['biaya-tindakan-perkelas'] = 'master/master_medis/biaya_tindakan';
+
 $route['biaya'] = 'master/tindakan/biaya';
 $route['diagnosa'] = 'master/tindakan/diagnosa';
 $route['asuransi'] = 'master/tindakan/asuransi';
