@@ -19,7 +19,7 @@ class Masuk extends MBELINK_Controller {
 		// User Login Information
 		$this->data['user'] = user_info();
 		
-		//Ngaeng-ngaeng
+	
 		$this->load->model('masuk_model');
 		//$this->load->model('info_model');
 	}
