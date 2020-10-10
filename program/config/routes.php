@@ -15,6 +15,8 @@ $route['tambah-user'] = 'master/master';
 //master-medis
 $route['daftar-data-tindakan'] = 'master/master_medis';
 $route['biaya-tindakan-perkelas'] = 'master/master_medis/biaya_tindakan';
+$route['tarif-asuransi'] = 'master/master_medis/tarif_asuransi';
+
 
 $route['biaya'] = 'master/tindakan/biaya';
 $route['diagnosa'] = 'master/tindakan/diagnosa';

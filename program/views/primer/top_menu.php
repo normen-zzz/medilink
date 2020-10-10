@@ -1,5 +1,5 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
-<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas','tindakandiagnosa'); ?>
+<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas','tindakandiagnosa','tarif-asuransi'); ?>
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
@@ -14,7 +14,7 @@
 			<li><a href="tindakandiagnosa">Tindakan Diagnosa (asuransi)</a></li>
 		  </ul>
 		</li>
-		<li><a href="#">Tarif Per-level Asuransi</a></li>
+		<li><a href="tarif-asuransi">Tarif Per-level Asuransi</a></li>
 	  </ul>         
 	</div>
 <?php } ?>

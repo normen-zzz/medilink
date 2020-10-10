@@ -37,4 +37,10 @@ class Master_medis extends MBELINK_Controller {
 
 		$this->load->view('master/tindakan_diagnosa');
 	}
+
+	public function tarif_asuransi()
+	{
+
+		$this->load->view('master/master_medis_tarif_asuransi');
+	}
 }
