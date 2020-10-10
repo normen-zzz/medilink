@@ -31,4 +31,10 @@ class Master_medis extends MBELINK_Controller {
 		//$this->load->view('welcome_message');
 		$this->load->view('master/master_medis_biaya_tindakan');
 	}
+
+	public function tindakan_diagnosa()
+	{
+
+		$this->load->view('master/tindakan_diagnosa');
+	}
 }
