@@ -74,13 +74,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Master
-        <small>Tindakan Diagnosa</small>
+        Master Medis
+        <small>Tarif Per-level Asuransi</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Master</a></li>
-        <li class="active">Tindakan Diagnosa</li>
+        <li class="active">Tarif Per-level Asurans</li>
       </ol>
       <div class="content-header">
         <div class="form-group">
