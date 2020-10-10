@@ -112,8 +112,7 @@
                   <td>A-4-10-I</td>
                   <td>SEPTIKEMIA RINGAN</td>
                   <td>										
-						<a href="#" onclick='show(1)' class="btn btn-primary">Edit</a>
-						<a href="#" class="btn btn-danger">Delete</a>  
+						<a href="#" onclick='show(1)' class="btn btn-primary">Pilih</a> 
 					</td>
                 </tr>
             </tbody>
@@ -130,8 +129,7 @@
             <!-- /.box-header -->
             <div id="table1" class="box-body">
               <div class="box-header">
-                <button type="button" class="btn btn-primary">Tambah Data</button>
-                <button type="button" class="btn btn-success">Export Data</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-default">Tambah Data</button>
             </div>
               <table id="example2" class="table table-bordered table-striped">
                 <thead>
@@ -146,7 +144,7 @@
                 <td>1</td>  
                 <td></td>              
                 <td>										
-					<a href="#" class="btn btn-primary">Edit</a>
+					<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">Edit</a>
 					<a href="#" class="btn btn-danger">Delete</a>  
 				</td>
                 </tr>
@@ -157,6 +155,34 @@
           </div>
           <!-- /.box -->
         </div>
+                <div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Tindakan</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">ID</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="1" disabled>
+                </div>
+        <div class="form-group">
+                  <label for="exampleInputEmail1">Jenis Tindakan</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
         
       </div>
       <!-- /.row -->
