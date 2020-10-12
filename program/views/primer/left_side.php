@@ -42,7 +42,7 @@
           <ul class="treeview-menu">
             <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
             <li><a href="daftar-data-tindakan"><i class="fa fa-circle-o"></i> Tindakan/Diagnosa</a></li>
-			<li><a href="biaya-tindakan-perkelas"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
+			<li><a href="nurse-station"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
           </ul>
         </li>
         <!--  <li class="treeview active">
