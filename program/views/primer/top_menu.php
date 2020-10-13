@@ -1,5 +1,5 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
-<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas','tindakandiagnosa','tarif-asuransi'); ?>
+<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas', 'diagnosa', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('nurse-station','kelas'); ?>
 
 
@@ -12,7 +12,7 @@
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Diagnosa<span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
-			<li><a href="#">Diagnosa</a></li>
+			<li><a href="diagnosa">Diagnosa</a></li>
 			<li><a href="#">Diagnosa (asuransi)</a></li>
 			<li><a href="tindakandiagnosa">Tindakan Diagnosa (asuransi)</a></li>
 		  </ul>
