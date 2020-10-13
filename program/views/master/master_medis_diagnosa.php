@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <?php //$this->load->view('primer/head');
+    <?php $this->load->view('primer/head');
   ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
