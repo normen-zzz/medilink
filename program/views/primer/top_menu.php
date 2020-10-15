@@ -33,8 +33,8 @@
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Penunjang<span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
-			<li><a href="#">Penunjang</a></li>
-			<li><a href="#">Kategori Penunjang</a></li>
+			<li><a href="penunjang">Penunjang</a></li>
+			<li><a href="kategori">Kategori Penunjang</a></li>
 		  </ul>
 		</li>
 	  </ul>         
