@@ -2,49 +2,25 @@
 <html>
 
 <head>
-    <?php //$this->load->view('primer/head');
+    <?php $this->load->view('primer/head');
     ?>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MEDILINK</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
-    <!-- daterange picker -->
-    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
-    <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-    <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="plugins/iCheck/all.css">
-    <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
-    <!-- Bootstrap time Picker -->
-    <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
-    <!-- Select2 -->
-    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-</head>
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Google Font -->
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
-
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini fixed">
     <!-- Site wrapper -->
     <div class="wrapper">
@@ -65,8 +41,8 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Master
-                    <small>RAWAT INAP</small>
+                    Master Medis
+                    <small>Rawat Inap</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -92,71 +68,11 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <form class="form-horizontal">
-                            <div class="box-body">
-                                <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-1">ID</label>
-
-                                    <div class="col-sm-1">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="ID">
-                                    </div>
-                                    
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-1">Description</label>
-
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Description">
-                                    </div>
-                                    
-                                    <label for="inputPassword3" class="col-sm-1">Kategori</label>
-
-                                    <div class="col-sm-2">
-                                        <select class="form-control">
-                                            <option>Pilih Kategori</option>
-                                            <option>Oksigen</option>
-                                            <option>Sewa Baju OK</option>
-                                            <option>Sewa Kamar OK</option>
-                                            <option>Ambulance</option>
-                                            <option>ALKES</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-1">Biaya RS</label>
-
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0">
-                                    </div>
-                                    <label for="inputPassword3" class="col-sm-1">Dokter/Driver</label>
-
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0">
-                                    </div>
-                                    <label for="inputPassword3" class="col-sm-1">Biaya Perawat</label>
-
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-1">BHP</label>
-
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0">
-                                    </div>
-                                    <label for="inputPassword3" class="col-sm-1">Alat</label>
-
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0">
-                                    </div>
-                                    <label for="inputPassword3" class="col-sm-1">Satuan</label>
-
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="margin">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-default">
+					Tambah Penunjang
+				</button>
+                    </div>
                             <!-- /.box-body -->
                             <div class="box-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -297,6 +213,75 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+        <div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Penunjang</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">ID</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ID">
+                </div>
+				<div class="form-group">
+                  <label for="exampleInputEmail1">Deskripsi</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Deskripsi">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Pilih Kategori</label>
+                  <select class="form-control">
+                                            <option>Pilih Kategori</option>
+                                            <option>Oksigen</option>
+                                            <option>Sewa Baju OK</option>
+                                            <option>Sewa Kamar OK</option>
+                                            <option>Ambulance</option>
+                                            <option>ALKES</option>
+                                        </select>
+                </div>
+				<div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Biaya Rumah Sakit</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rp. 0,-">
+                </div>
+				<div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Biaya BHP</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rp. 0,-">
+                </div>
+				<div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Biaya Dokter/Drive</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rp. 0,-">
+                </div>
+				<div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Biaya Alat </label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rp. 0,-">
+                </div>
+				<div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Biaya Perawat</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rp. 0,-">
+                </div>
+				<div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Biaya Satuan</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rp. 0,-">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+      </div>
+      <!-- /.box -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
         <?php $this->load->view('primer/footer'); ?>
 
