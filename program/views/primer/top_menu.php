@@ -1,6 +1,6 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
-<?php $mrawatinap=array('nurse-station','kelas','kamar','Bed','penunjang','kategori'); ?>
+<?php $mrawatinap=array('nurse-station','kelas','kamar','bed','penunjang','kategori'); ?>
 
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
