@@ -1,47 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?php //$this->load->view('primer/head');?>
-<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MEDILINK</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <?php $this->load->view('primer/head');?>
+<!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="plugins/iCheck/all.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
-  <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
   <!-- Google Font -->
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-</head>
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini fixed">
 <!-- Site wrapper -->
@@ -69,7 +45,7 @@
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Master</a></li>
-        <li class="active">Tambah User</li>
+        <li class="active">Rawat </li>
       </ol>
     </section>
 
@@ -80,8 +56,9 @@
     
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Bed</h3>
-
+          <h3 class="box-title">Data Kamar</h3> <br>
+          <br>
+          <Label>Nurse Station</Label>
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
               <i class="fa fa-minus"></i></button>
@@ -91,7 +68,6 @@
         </div>
         <div class="box-body">
           <div class="col-sm-5">  
-            <label>Data Kamar</label>
             <div class="box">
             <!-- /.box-header -->
             <div class="box-body">
@@ -133,6 +109,31 @@
                   <td>5</td>
                   <td>MAWAR 3</td>
                   <td>1</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Seruni 2</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Anyelir 2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Seruni 1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Mawar 1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Mawar 2</td>
+                  <td>2</td>
                 </tr>
                 </tbody>
               </table>
@@ -279,16 +280,16 @@
       showInputs: false
     })
   })
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
+   $(function () {
+     $('#example1').DataTable()
+       $('#example2').DataTable({
+          'paging'      : true,
+          'lengthChange': false,
+          'searching'   : false,
+          'ordering'    : true,
+          'info'        : true,
+          'autoWidth'   : false
+       })
   })
 </script>
 </body>
