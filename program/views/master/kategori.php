@@ -141,7 +141,7 @@
     </div>
     <!-- ./wrapper -->
 
-    <?php $this->load->view('primer/jse');
+    <?php //$this->load->view('primer/jse');
     ?>
 
     <!-- jQuery 3 -->
