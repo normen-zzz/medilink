@@ -1,13 +1,13 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
-<?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
-<?php $mrawatinap=array('rawat-inap','kelas', 'kamar', 'bed', 'penunjang', 'data_penunjang'); ?>
+<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
+<?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
 
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="daftar-data-tindakan">Master Data Tindakan</a></li>
+		<li><a href="	-data-tindakan">Master Data Tindakan</a></li>
 		<li><a href="biaya-tindakan-perkelas">Biaya Tindakan Perkelas</a></li>
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Diagnosa<span class="caret"></span></a>
@@ -34,7 +34,7 @@
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Penunjang<span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
 			<li><a href="penunjang">Penunjang</a></li>
-			<li><a href="#">Kategori Penunjang</a></li>
+			<li><a href="kategori">Kategori Penunjang</a></li>
 		  </ul>
 		</li>
 	  </ul>         

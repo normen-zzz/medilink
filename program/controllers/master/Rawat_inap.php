@@ -23,27 +23,27 @@ class Rawat_inap extends MBELINK_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/nurse');
+		$this->load->view('master/rawat_inap/nurse');
 	}
 
 	public function kategori()
 	{
-		$this->load->view('master/kategori');
+		$this->load->view('master/rawat_inap/kategori');
 	}
 	public function kelas()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/kelas');
+		$this->load->view('master/rawat_inap/kelas');
 	}
 	public function kamar()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/kamar');
+		$this->load->view('master/rawat_inap/kamar');
 	}
 	public function bed()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/bed');
+		$this->load->view('master/rawat_inap/bed');
 	}
 
 	public function penunjang(){
