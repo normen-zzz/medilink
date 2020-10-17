@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Medis extends MBELINK_Controller {
+class Rawat_inap extends MBELINK_Controller {
 	public function __construct()
 	{
 		parent::__construct();
@@ -23,39 +23,13 @@ class Medis extends MBELINK_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/tindakan');
-	}
-
-	// public function biaya()
-	// {
-	// 	$this->load->view('master/biaya_tindakan');
-	// }
-
-	// public function diagnosa()
-	// {
-	// 	$this->load->view('master/diagnosa');
-	// }
-
-	// public function diagnosa_asuransi()
-	// {
-	// 	$this->load->view('master/diagnosa_asuransi');
-	// }
-
-	public function penunjang()
-	{
-		$this->load->view('master/penunjang');
+		$this->load->view('master/nurse');
 	}
 
 	public function kategori()
 	{
 		$this->load->view('master/kategori');
 	}
-	public function nurse()
-	{
-		//$this->load->view('welcome_message');
-		$this->load->view('master/nurse');
-	}
-
 	public function kelas()
 	{
 		//$this->load->view('welcome_message');
@@ -72,4 +46,7 @@ class Medis extends MBELINK_Controller {
 		$this->load->view('master/bed');
 	}
 
+	public function penunjang(){
+		$this->load->view('master/rawat_inap/penunjang');
+	}
 }
