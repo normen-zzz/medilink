@@ -28,7 +28,7 @@ class Rawat_inap extends MBELINK_Controller {
 
 	public function kategori()
 	{
-		$this->load->view('master/rawat_inap/kategori');
+		$this->load->view('master/rawat_inap/kategori_penunjang');
 	}
 	public function kelas()
 	{

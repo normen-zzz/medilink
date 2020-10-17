@@ -21,10 +21,11 @@ $route['diagnosa-asuransi'] = 'master/master_medis/diagnosa_asuransi';
 $route['tindakandiagnosa'] = 'master/master_medis/tindakan_diagnosa';
 // End of Master Medis
 
-
+// Rawat inap
 $route['rawat-inap'] = 'master/rawat_inap';
 $route['kelas'] = 'master/rawat_inap/kelas';
 $route['kategori'] = 'master/rawat_inap/kategori';
 $route['kamar'] = 'master/rawat_inap/kamar';
 $route['bed'] = 'master/rawat_inap/bed';
 $route['penunjang'] = 'master/rawat_inap/penunjang';
+// End Of Rawat Inap
