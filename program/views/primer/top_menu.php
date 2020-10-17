@@ -1,5 +1,5 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
-<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
+<?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
 
 
@@ -7,7 +7,7 @@
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="	-data-tindakan">Master Data Tindakan</a></li>
+		<li><a href="master-medis">Master Data Tindakan</a></li>
 		<li><a href="biaya-tindakan-perkelas">Biaya Tindakan Perkelas</a></li>
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Diagnosa<span class="caret"></span></a>
