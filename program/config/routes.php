@@ -29,3 +29,7 @@ $route['kamar'] = 'master/rawat_inap/kamar';
 $route['bed'] = 'master/rawat_inap/bed';
 $route['penunjang'] = 'master/rawat_inap/penunjang';
 // End Of Rawat Inap
+
+// Master tarif visit dan konsul
+$route['tarif-visitkonsul'] = 'master/tarif_visitkonsul';
+// End Of master visit dan konsul

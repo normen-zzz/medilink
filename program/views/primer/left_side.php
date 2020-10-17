@@ -42,7 +42,8 @@
           <ul class="treeview-menu">
             <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
             <li><a href="master-medis"><i class="fa fa-circle-o"></i> Tindakan/Diagnosa</a></li>
-			<li><a href="rawat-inap"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
+			      <li><a href="rawat-inap"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
+            <li><a href="tarif-visitkonsul"><i class="fa fa-circle-o"></i> Tarif Visit dan Konsul</a></li>
           </ul>
         </li>
         <!--  <li class="treeview active">
