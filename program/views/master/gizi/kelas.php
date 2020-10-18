@@ -52,25 +52,24 @@
     <!-- Site wrapper -->
     <div class="wrapper">
 
-        <?php $this->load->view('primer/header');?>
+        <?php $this->load->view('primer/header'); ?>
 
 
         <!-- =============================================== -->
 
         <!-- Left side column. contains the sidebar -->
-        <?php $this->load->view('primer/left_side');?>
+        <?php $this->load->view('primer/left_side'); ?>
 
 
         <!-- =============================================== -->
-
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Master
-                    <small>TINDAKAN DAN DIAGNOSA</small>
+                    Master Gizi
+                    <small>Data Gizi (Kelas)</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -87,78 +86,137 @@
 
                         <div class="box">
                             <div class="box-header with-border">
-                                <h3 class="box-title">DIAGNOSA</h3>
+                                <h3 class="box-title">Gizi (Kelas)</h3>
                                 <!-- /.box-header -->
                                 <div class="box-header">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
                                         data-target="#modal-tambah">Tambah Data</button>
                                     <button type="button" class="btn btn-success">Export Data</button>
                                 </div>
                             </div>
                             <div class="box-body">
-                                <table id="example1" class="table table-bordered table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Kode ICD</th>
-                                            <th>Nama ICD</th>
-                                            <th>Kode KTD</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Q991</td>
-                                            <td>46, XX true hemaprodite</td>
-                                            <td> </td>
-                                            <td> <a href="#" class="btn btn-primary">Edit</a>
-                                                <a href="#" class="btn btn-danger">Delete</a> </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Z364</td>
-                                            <td>A/n screen fetal gwth retard using ultrasound oth phys meth</td>
-                                            <td>  </td>
-                                            <td> <a href="#" class="btn btn-primary">Edit</a>
-                                                <a href="#" class="btn btn-danger">Delete</a> </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Gizi Name</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Dier Biasa (N)</td>
+                                                <td>
+                                                    <a class="btn btn-success" data-toggle="modal"
+                                                        data-target="#modal-gizikelas">Detail</a>
+                                                    <a href="#" class="btn btn-primary">Edit</a>
+                                                    <a href="#" class="btn btn-danger">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Diet Lunak(B)</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-success">Detail</a>
+                                                    <a href="#" class="btn btn-primary">Edit</a>
+                                                    <a href="#" class="btn btn-danger">Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <!-- /.box-body -->
                             </div>
-                            </form>
                         </div>
+                        <!-- /.box -->
                     </div>
-                    <!-- /.box -->
                 </div>
+            </section>
+            <!-- /.content -->
         </div>
-        </section>
-        <!-- /.content -->
+        <!-- /.content-wrapper -->
     </div>
-    <!-- /.content-wrapper -->
+    <!-- /.box -->
 
     <?php $this->load->view('primer/footer'); ?>
-    
-    <!-- /.modal -->
-    <div class="modal fade" id="modal-tambah">
+
+    <div class="modal fade" id="modal-gizikelas">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Tambah Data Diagnosa </h4>
+                    <h4 class="modal-title">Detail : <i>Diet Biasa (N)</i></h4>
+                    <button type="button" class="btn btn-primary mt-12" data-toggle="modal"
+                        data-target="#modal-tambahdeskripsi">Tambah Data</button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group col-sm-6">
-                        <label for="exampleInputEmail1">Kode ICD</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="exampleInputEmail1">Nama ICD</label>
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Kelas</th>
+                                <th>Tanggal Berlaku</th>
+                                <th>Biaya</th>
+                                <th>Bahan</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>VIP</td>
+                                <td>01/05/2019</td>
+                                <td></td>
+                                <td>55.000</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- /.modal -->
+    <div class="modal fade" id="modal-tambahdeskripsi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Data Deskripsi Diet Biasa</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-sm-12">
+                        <label for="exampleInputEmail1">Kelas</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
                     </div>
                     <div class="form-group col-sm-12">
-                        <label for="exampleInputEmail1">Kode KTD</label>
+                        <label>Tanggal Berlaku</label>
+                        <input type="text" class="form-control" id="datetimepicker1"
+                            data-toggle="datetimepicker" data-target="#datetimepicker1" />
+                    </div>
+
+                    <div class="form-group col-sm-12">
+                        <label for="exampleInputEmail1">Biaya</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label for="exampleInputEmail1">Bahan</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
                     </div>
                 </div>
@@ -227,8 +285,13 @@
                 'autoWidth': false
             })
         })
-    </script>
 
+        $(function () {
+        $('#datetimepicker1').datetimepicker({
+            format: 'DD/MM/YYYY'
+        });
+    
+    </script>
 </body>
 
 </html>

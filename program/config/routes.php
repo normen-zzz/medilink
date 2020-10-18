@@ -38,4 +38,5 @@ $route['tarif-visitkonsul'] = 'master/tarif_visitkonsul';
 $route['bahan'] = 'master/gizi';
 $route['type'] = 'master/gizi/type';
 $route['gizi'] = 'master/gizi/gizi';
+$route['gizi-kelas'] = 'master/gizi/kelas';
 // End Of master Gizi
