@@ -33,3 +33,9 @@ $route['penunjang'] = 'master/rawat_inap/penunjang';
 // Master tarif visit dan konsul
 $route['tarif-visitkonsul'] = 'master/tarif_visitkonsul';
 // End Of master visit dan konsul
+
+// Master Gizi
+$route['bahan'] = 'master/gizi';
+$route['type'] = 'master/gizi/type';
+$route['gizi'] = 'master/gizi/gizi';
+// End Of master Gizi
