@@ -5,7 +5,7 @@
 <?php $mvisitkonsul=array('visite'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
 
-<?php $mlab=array('sample', 'metode', 'kategori-laboratorium', 'data-laboratorium','group-pemeriksaan','harga-biaya'); ?>
+<?php $mlab=array('sample', 'metode-laboratorium', 'kategori-laboratorium', 'data-laboratorium','group-pemeriksaan','harga-biaya'); ?>
 
 <
 <?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
@@ -93,8 +93,8 @@
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="Sample">Sample</a></li>
-		<li><a href="#">Metode Data Laboraturium</a></li>
+		<li><a href="sample">Sample</a></li>
+		<li><a href="metode-laboratorium">Metode Data Laboraturium</a></li>
 		<li><a href="kategori-laboratorium">Categories</a></li>
 		<li><a href="data-laboratorium">Master Data Laboraturium</a></li>
 		<li><a href="group-pemeriksaan">Group Pemeriksaan</a></li>
