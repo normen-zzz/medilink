@@ -43,7 +43,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Master Tarif Visite dan Konsul Dokter
+                    Master Tariff Visite dan Konsul Dokter
                     <small>Data Visite dan Konsul Dokter</small>
                 </h1>
                 <ol class="breadcrumb">
