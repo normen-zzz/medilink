@@ -50,6 +50,8 @@ $route['gizi-detail'] = 'master/gizi/detail';
 
 
 // Master penunjang laboratorium
+$route['sample'] = 'master/penunjang_laboratorium';
+$route['metode-laboratorium'] = 'master/penunjang_laboratorium/metode';
 $route['kategori-laboratorium'] = 'master/penunjang_laboratorium/kategori';
 $route['data-laboratorium'] = 'master/penunjang_laboratorium/laboratorium';
 $route['group-pemeriksaan'] = 'master/penunjang_laboratorium/group_pem';
