@@ -19,13 +19,6 @@ $route['tarif-asuransi'] = 'master/master_medis/tarif_asuransi';
 $route['diagnosa'] = 'master/master_medis/diagnosa';
 $route['diagnosa-asuransi'] = 'master/master_medis/diagnosa_asuransi';
 $route['tindakandiagnosa'] = 'master/master_medis/tindakan_diagnosa';
-$route['nurse-station'] = 'master/medis/nurse';
-$route['kelas'] = 'master/medis/kelas';
-$route['kategori'] = 'master/medis/kategori';
-$route['penunjang'] = 'master/medis/penunjang';
-$route['kamar'] = 'master/medis/kamar';
-$route['bed'] = 'master/medis/bed';
-$route['visite'] = 'master/medis/visite';
 // End of Master Medis
 
 // Rawat inap
@@ -45,6 +38,11 @@ $route['tarif-visitkonsul'] = 'master/tarif_visitkonsul';
 $route['bahan'] = 'master/gizi';
 $route['type'] = 'master/gizi/type';
 $route['gizi'] = 'master/gizi/gizi';
-$route['gizi-kelas'] = 'master/gizi/kelas';
+$route['gizi-kelas'] = 'master/gizi/kelas';	
 $route['gizi-detail'] = 'master/gizi/detail';
 // End Of master Gizi
+
+// Master penunjang laboratorium
+$route['kategori-laboratorium'] = 'master/penunjang_laboratorium/kategori';
+$route['data-laboratorium'] = 'master/penunjang_laboratorium/laboratorium';
+// End Of master penunjang laboratorium

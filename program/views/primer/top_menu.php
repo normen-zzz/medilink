@@ -1,12 +1,9 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
-<?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
-<?php $mrawatinap=array('nurse-station','kelas','kamar','bed','penunjang','kategori'); ?>
-<?php $mvisite=array('visite'); ?>
-
 <?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
 <?php $mvisitkonsul=array('tarif-visitkonsul'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
+<?php $mlaboratorium=array('kategori-laboratorium', 'data-laboratorium'); ?>
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
@@ -46,8 +43,6 @@
 	</div>
 <?php } ?>
 
-
-
 <?php if(in_array($this->uri->segment('1'),$mvisitkonsul)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
@@ -66,6 +61,19 @@
 		<li><a href="gizi">Gizi</a></li>
 		<li><a href="gizi-kelas">Gizi (Kelas)</a></li>
 		<li><a href="gizi-detail">Gizi Detail</a></li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+<?php if(in_array($this->uri->segment('1'),$mlaboratorium)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="bahan">Sample</a></li>
+		<li><a href="type">Metode</a></li>
+		<li><a href="gizi">Kategori</a></li>
+		<li><a href="gizi-kelas">Grup Pemeriksaan</a></li>
+		<li><a href="gizi-detail">Biaya Pemeriksaan (perkelas)</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
