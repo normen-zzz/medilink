@@ -1,6 +1,7 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
+<?php $mradiologi=array('radiologi','biayaradiologi'); ?>
 <?php $mvisitkonsul=array('visite'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
 <?php $mlaboratorium=array('kategori-laboratorium', 'data-laboratorium'); ?>
@@ -43,6 +44,23 @@
 	  </ul>         
 	</div>
 <?php } ?>
+
+
+<?php if(in_array($this->uri->segment('1'),$mradiologi)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="radiologi">Radiologi</a></li>
+		<li><a href="biayaradiologi">Biaya Radiologi Per - Kelas</a></li>
+		  </ul>
+		</li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+
+
+
 
 <?php if(in_array($this->uri->segment('1'),$mvisitkonsul)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
