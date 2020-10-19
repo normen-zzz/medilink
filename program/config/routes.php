@@ -13,13 +13,11 @@ $route['logout-system'] = 'masuk/logout';
 $route['tambah-user'] = 'master/master';
 
 //master-medis
-$route['daftar-data-tindakan'] = 'master/master_medis';
+$route['master-medis'] = 'master/master_medis';
 $route['biaya-tindakan-perkelas'] = 'master/master_medis/biaya_tindakan';
 $route['tarif-asuransi'] = 'master/master_medis/tarif_asuransi';
 $route['diagnosa'] = 'master/master_medis/diagnosa';
 $route['diagnosa-asuransi'] = 'master/master_medis/diagnosa_asuransi';
-$route['asuransi'] = 'master/tindakan/asuransi';
-$route['TarifAsuransi'] = 'master/tindakan/TarifAsuransi';
 $route['tindakandiagnosa'] = 'master/master_medis/tindakan_diagnosa';
 $route['nurse-station'] = 'master/medis/nurse';
 $route['kelas'] = 'master/medis/kelas';
@@ -28,3 +26,25 @@ $route['penunjang'] = 'master/medis/penunjang';
 $route['kamar'] = 'master/medis/kamar';
 $route['bed'] = 'master/medis/bed';
 $route['visite'] = 'master/medis/visite';
+// End of Master Medis
+
+// Rawat inap
+$route['rawat-inap'] = 'master/rawat_inap';
+$route['kelas'] = 'master/rawat_inap/kelas';
+$route['kategori'] = 'master/rawat_inap/kategori';
+$route['kamar'] = 'master/rawat_inap/kamar';
+$route['bed'] = 'master/rawat_inap/bed';
+$route['penunjang'] = 'master/rawat_inap/penunjang';
+// End Of Rawat Inap
+
+// Master tarif visit dan konsul
+$route['tarif-visitkonsul'] = 'master/tarif_visitkonsul';
+// End Of master visit dan konsul
+
+// Master Gizi
+$route['bahan'] = 'master/gizi';
+$route['type'] = 'master/gizi/type';
+$route['gizi'] = 'master/gizi/gizi';
+$route['gizi-kelas'] = 'master/gizi/kelas';
+$route['gizi-detail'] = 'master/gizi/detail';
+// End Of master Gizi

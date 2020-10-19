@@ -89,7 +89,8 @@
                                 <h3 class="box-title">DIAGNOSA (Asuransi)</h3>
                                 <!-- /.box-header -->
                                 <div class="box-header">
-                                    <button type="button" class="btn btn-primary">Tambah Data</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#modal-tambah">Tambah Data</button>
                                     <button type="button" class="btn btn-success">Export Data</button>
                                 </div>
                             </div>
@@ -165,135 +166,193 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
-        <?php $this->load->view('primer/footer'); ?>
-
-        <div class="modal fade" id="modal-diagnosaasuransi">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Detail : <i>BPJS Ketenagakerjaan</i></h4>
-                    </div>
-                    <div class="modal-body">
-                        <table id="example2" class="table table-bordered table-hover">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Kode ICD</th>
-                                    <th>Nama ICD</th>
-                                    <th>Kode KTD</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Q-5-21-0</td>
-                                    <td>ABORSI</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Q-5-20-0</td>
-                                    <td>ABORSI MENGANCAM</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>W-4-13-III</td>
-                                    <td>ABORTUS BERAT</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>W-4-14-III</td>
-                                    <td>ABORTUS MENGANCAM BERAT</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>W-4-14-I</td>
-                                    <td>ABORTUS MENGANCAM RINGAN</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>W-1-14-II</td>
-                                    <td>ABORTUS MENGANCAM SEDANG</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>W-4-13-I</td>
-                                    <td>ABORTUS RINGAN</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>W-4-13-II</td>
-                                    <td>ABORTUS SEDANG</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>D-4-10-II</td>
-                                    <td>AGRANUL BERAT</td>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#" class="btn-sm btn-primary">Edit</a>
-                                        <a href="#" class="btn-sm btn-danger">Delete</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
-
     </div>
     <!-- /.box -->
+
+    <?php $this->load->view('primer/footer'); ?>
+
+    <div class="modal fade" id="modal-diagnosaasuransi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Detail : <i>BPJS Ketenagakerjaan</i></h4>
+                    <button type="button" class="btn btn-primary mt-12" data-toggle="modal"
+                        data-target="#modal-tambahdeskripsi">Tambah Data</button>
+                </div>
+                <div class="modal-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Kode ICD</th>
+                                <th>Nama ICD</th>
+                                <th>Kode KTD</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Q-5-21-0</td>
+                                <td>ABORSI</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Q-5-20-0</td>
+                                <td>ABORSI MENGANCAM</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>W-4-13-III</td>
+                                <td>ABORTUS BERAT</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>W-4-14-III</td>
+                                <td>ABORTUS MENGANCAM BERAT</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>W-4-14-I</td>
+                                <td>ABORTUS MENGANCAM RINGAN</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>W-1-14-II</td>
+                                <td>ABORTUS MENGANCAM SEDANG</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>W-4-13-I</td>
+                                <td>ABORTUS RINGAN</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>W-4-13-II</td>
+                                <td>ABORTUS SEDANG</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>D-4-10-II</td>
+                                <td>AGRANUL BERAT</td>
+                                <td>1</td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- /.modal -->
+    <div class="modal fade" id="modal-tambahdeskripsi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Data Deskripsi BPJS Kesehatan</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-sm-6">
+                        <label for="exampleInputEmail1">Kode ICD</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="exampleInputEmail1">Nama ICD</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label for="exampleInputEmail1">Kode KTD</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer mt-2">
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- /.modal -->
+    <div class="modal fade" id="modal-tambah">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Data Deskripsi Diagnosa (Asuransi)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-sm-12">
+                        <label for="exampleInputEmail1">Description</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer mt-2">
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
     <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->

@@ -90,7 +90,8 @@
                                 <h3 class="box-title">DIAGNOSA</h3>
                                 <!-- /.box-header -->
                                 <div class="box-header">
-                                    <button type="button" class="btn btn-primary">Tambah Data</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#modal-tambah">Tambah Data</button>
                                     <button type="button" class="btn btn-success">Export Data</button>
                                 </div>
                             </div>
@@ -137,6 +138,39 @@
     <!-- /.content-wrapper -->
 
     <?php $this->load->view('primer/footer'); ?>
+    
+    <!-- /.modal -->
+    <div class="modal fade" id="modal-tambah">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Data Diagnosa </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-sm-6">
+                        <label for="exampleInputEmail1">Kode ICD</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="exampleInputEmail1">Nama ICD</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label for="exampleInputEmail1">Kode KTD</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer mt-2">
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
 
     <!-- Add the sidebar's background. This div must be placed

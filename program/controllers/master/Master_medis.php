@@ -23,37 +23,37 @@ class Master_medis extends MBELINK_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/master_medis_data_tindakan');
+		$this->load->view('master/master_medis/master_medis_data_tindakan');
 	}
 	
 	public function biaya_tindakan()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/master_medis_biaya_tindakan');
+		$this->load->view('master/master_medis/master_medis_biaya_tindakan');
 	}
 
 	public function diagnosa()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/master_medis_diagnosa');
+		$this->load->view('master/master_medis/master_medis_diagnosa');
 	}
 
 	public function diagnosa_asuransi()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/master_medis_diagnosaasuransi');
+		$this->load->view('master/master_medis/master_medis_diagnosaasuransi');
 	}
 
 
 	public function tindakan_diagnosa()
 	{
 
-		$this->load->view('master/tindakan_diagnosa');
+		$this->load->view('master/master_medis/tindakan_diagnosa');
 	}
 
 	public function tarif_asuransi()
 	{
 
-		$this->load->view('master/master_medis_tarif_asuransi');
+		$this->load->view('master/master_medis/master_medis_tarif_asuransi');
 	}
 }
