@@ -3,6 +3,7 @@
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
 <?php $mvisitkonsul=array('tarif-visitkonsul'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
+<?php $mlab=array('sample', 'metode', 'categories', 'master-data-lab','group-pemeriksaan','harga-biaya'); ?>
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
@@ -60,6 +61,20 @@
 		<li><a href="gizi">Gizi</a></li>
 		<li><a href="gizi-kelas">Gizi (Kelas)</a></li>
 		<li><a href="gizi-detail">Gizi Detail</a></li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+<?php if(in_array($this->uri->segment('1'),$mlab)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="#">Sample</a></li>
+		<li><a href="#">Metode Data Laboraturium</a></li>
+		<li><a href="#">Categories</a></li>
+		<li><a href="#">Master Data Laboraturium</a></li>
+		<li><a href="group-pemeriksaan">Group Pemeriksaan</a></li>
+		<li><a href="harga-biaya">Harga/Biaya Pemeriksaan Perkelas</a></li>
 	  </ul>         
 	</div>
 <?php } ?>

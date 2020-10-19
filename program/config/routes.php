@@ -41,3 +41,7 @@ $route['gizi'] = 'master/gizi/gizi';
 $route['gizi-kelas'] = 'master/gizi/kelas';
 $route['gizi-detail'] = 'master/gizi/detail';
 // End Of master Gizi
+
+//Master Data Pendukung Laboraturium
+$route['group-pemeriksaan'] = 'master/lab/group_pem';
+$route['harga-biaya'] = 'master/lab/harga_biaya';
