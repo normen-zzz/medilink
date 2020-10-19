@@ -47,13 +47,7 @@
 <?php } ?>
 
 
-<?php if(in_array($this->uri->segment('1'),$mvisite)){ ?>
-	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-	  <ul class="nav navbar-nav">
-		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="visite">Tarif Visit dan Konsult Dokter</a></li>
-		  </ul>
-		</li>
+
 <?php if(in_array($this->uri->segment('1'),$mvisitkonsul)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
@@ -62,18 +56,6 @@
 	  </ul>         
 	</div>
 <?php } ?>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php if(in_array($this->uri->segment('1'),$mgizi)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
