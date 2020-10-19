@@ -46,3 +46,10 @@ $route['gizi-detail'] = 'master/gizi/detail';
 $route['kategori-laboratorium'] = 'master/penunjang_laboratorium/kategori';
 $route['data-laboratorium'] = 'master/penunjang_laboratorium/laboratorium';
 // End Of master penunjang laboratorium
+
+// Master penunjang operasi
+$route['jenis-operasi'] = 'master/penunjang_operasi';
+$route['item-operasi'] = 'master/penunjang_operasi/item';
+$route['tarif-operasi'] = 'master/penunjang_operasi/tarif';
+$route['tarif-operasi-perkelas'] = 'master/penunjang_operasi/tarif_perkelas';
+// End Of master penunjang operasi

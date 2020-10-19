@@ -4,6 +4,7 @@
 <?php $mvisitkonsul=array('tarif-visitkonsul'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
 <?php $mlaboratorium=array('kategori-laboratorium', 'data-laboratorium'); ?>
+<?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
@@ -75,6 +76,18 @@
 		<li><a href="data-laboratorium">Data Laboratorium</a></li>
 		<li><a href="-">Grup Pemeriksaan</a></li>
 		<li><a href="-">Biaya Pemeriksaan (perkelas)</a></li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+<?php if(in_array($this->uri->segment('1'),$moperasi)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="jenis-operasi">Jenis Operasi</a></li>
+		<li><a href="item-operasi">Master Item Operasi</a></li>
+		<li><a href="tarif-operasi">Tarif Operasi</a></li>
+		<li><a href="tarif-operasi-perkelas">Tarif Operasi Per-Kelas</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
