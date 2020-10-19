@@ -1,7 +1,7 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
-<?php $mvisitkonsul=array('tarif-visitkonsul'); ?>
+<?php $mvisitkonsul=array('visite'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
 <?php $mlaboratorium=array('kategori-laboratorium', 'data-laboratorium'); ?>
 <?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
