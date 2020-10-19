@@ -161,7 +161,6 @@
                 </tbody>
               </table>
               <br>
-              Copy Configuration
             </div>
           </div>
         </div>
