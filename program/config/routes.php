@@ -30,6 +30,11 @@ $route['bed'] = 'master/rawat_inap/bed';
 $route['penunjang'] = 'master/rawat_inap/penunjang';
 // End Of Rawat Inap
 
+// Radiologi
+$route['radiologi'] = 'master/Master_radiologi/radiologi';
+$route['biayaradiologi'] = 'master/Master_radiologi/biayaradiologi';
+// End Of Radiologi
+
 // Master tarif visit dan konsul
 $route['visite'] = 'master/Tarif_visitkonsul';
 // End Of master visit dan konsul
@@ -41,6 +46,11 @@ $route['gizi'] = 'master/gizi/gizi';
 $route['gizi-kelas'] = 'master/gizi/kelas';	
 $route['gizi-detail'] = 'master/gizi/detail';
 // End Of master Gizi
+
+
+//Master Data Pendukung Laboraturium
+$route['group-pemeriksaan'] = 'master/lab/group_pem';
+$route['harga-biaya'] = 'master/lab/harga_biaya';
 
 // Master penunjang laboratorium
 $route['sample'] = 'master/penunjang_laboratorium';
@@ -55,3 +65,4 @@ $route['item-operasi'] = 'master/penunjang_operasi/item';
 $route['tarif-operasi'] = 'master/penunjang_operasi/tarif';
 $route['tarif-operasi-perkelas'] = 'master/penunjang_operasi/tarif_perkelas';
 // End Of master penunjang operasi
+

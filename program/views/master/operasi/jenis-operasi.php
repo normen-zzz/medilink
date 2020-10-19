@@ -42,7 +42,7 @@
             <section class="content-header">
                 <h1>
                     Master Medis
-                    <small>Jenis Operasi</small>
+                    <small>Penunjang Operasi</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -58,7 +58,6 @@
 
                 <div class="box">
                     <div class="box-header with-border">
-
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
                                 <i class="fa fa-minus"></i></button>
