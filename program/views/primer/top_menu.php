@@ -69,11 +69,12 @@
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="bahan">Sample</a></li>
-		<li><a href="type">Metode</a></li>
-		<li><a href="gizi">Kategori</a></li>
-		<li><a href="gizi-kelas">Grup Pemeriksaan</a></li>
-		<li><a href="gizi-detail">Biaya Pemeriksaan (perkelas)</a></li>
+		<li><a href="Sample">Sample</a></li>
+		<li><a href="-">Metode</a></li>
+		<li><a href="kategori-laboratorium">Kategori</a></li>
+		<li><a href="data-laboratorium">Data Laboratorium</a></li>
+		<li><a href="-">Grup Pemeriksaan</a></li>
+		<li><a href="-">Biaya Pemeriksaan (perkelas)</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
