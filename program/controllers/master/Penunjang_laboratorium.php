@@ -26,6 +26,12 @@ class Penunjang_laboratorium extends MBELINK_Controller {
 		$this->load->view('master/penunjang_laboratorium/sample');
 	}
 
+	public function metode()
+	{
+		//$this->load->view('welcome_message');
+		$this->load->view('master/penunjang_laboratorium/metode');
+	}
+
 	public function kategori()
 	{
 		//$this->load->view('welcome_message');
