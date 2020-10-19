@@ -31,17 +31,31 @@ $route['penunjang'] = 'master/rawat_inap/penunjang';
 // End Of Rawat Inap
 
 // Master tarif visit dan konsul
-$route['tarif-visitkonsul'] = 'master/tarif_visitkonsul';
+$route['visite'] = 'master/Tarif_visitkonsul';
 // End Of master visit dan konsul
 
 // Master Gizi
 $route['bahan'] = 'master/gizi';
 $route['type'] = 'master/gizi/type';
 $route['gizi'] = 'master/gizi/gizi';
-$route['gizi-kelas'] = 'master/gizi/kelas';
+$route['gizi-kelas'] = 'master/gizi/kelas';	
 $route['gizi-detail'] = 'master/gizi/detail';
 // End Of master Gizi
+
 
 //Master Data Pendukung Laboraturium
 $route['group-pemeriksaan'] = 'master/lab/group_pem';
 $route['harga-biaya'] = 'master/lab/harga_biaya';
+
+// Master penunjang laboratorium
+$route['kategori-laboratorium'] = 'master/penunjang_laboratorium/kategori';
+$route['data-laboratorium'] = 'master/penunjang_laboratorium/laboratorium';
+// End Of master penunjang laboratorium
+
+// Master penunjang operasi
+$route['jenis-operasi'] = 'master/penunjang_operasi';
+$route['item-operasi'] = 'master/penunjang_operasi/item';
+$route['tarif-operasi'] = 'master/penunjang_operasi/tarif';
+$route['tarif-operasi-perkelas'] = 'master/penunjang_operasi/tarif_perkelas';
+// End Of master penunjang operasi
+

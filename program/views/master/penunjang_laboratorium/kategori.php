@@ -43,8 +43,8 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Master Tarif Visite dan Konsul Dokter
-                    <small>Data Visite dan Konsul Dokter</small>
+                    Master Penunjang Laboratorium
+                    <small>Data Kategori</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -60,9 +60,9 @@
                         <!-- Default Box -->
                         <div class="box">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Visite dan Konsul Dokter</h3>
+                                <h3 class="box-title">Kategori</h3>
                                 <div class="box-header">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-tarif">Tambah Data
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-laboratorium">Tambah Data
                                     </button>
 
                                     <button type="button" class="btn btn-success">Export Data</button>
@@ -74,21 +74,15 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Spesials</th>
-                                            <th>Kelas</th>
-                                            <th>Biaya Kunjungan</th>
-                                            <th>Biaya Konsul</th>
-                                            <th>Aksi</th>
+                                            <th>Nama</th>
+                                            <th width="30%">Aksi</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Kandungan</td>
-                                            <td></td>
-                                            <td>180.000</td>
-                                            <td>100.000</td>
+                                            <td>hematologi</td>
                                             <td><a href="#" class="btn btn-primary">Edit</a>
                                                 <a href="#" class="btn btn-danger">Delete</a> </td>
                                         </tr>
@@ -106,7 +100,7 @@
 
         <?php $this->load->view('primer/footer');?>
 
-        <div class="modal fade" id="modal-tarif">
+        <div class="modal fade" id="modal-laboratorium">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -116,19 +110,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group col-sm-6">
-                            <label for="exampleInputEmail1">Spesialis</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="exampleInputEmail1">Kelas</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="exampleInputEmail1">Biaya Kunjungan</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="exampleInputEmail1">Biaya Konsult</label>
+                            <label for="exampleInputEmail1">Nama</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
                         </div>
                     </div>

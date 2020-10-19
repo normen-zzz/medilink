@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tarif_visitkonsul extends MBELINK_Controller {
+class Penunjang_laboratorium extends MBELINK_Controller {
 	public function __construct()
 	{
 		parent::__construct();
@@ -23,6 +23,19 @@ class Tarif_visitkonsul extends MBELINK_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/visite');
+		$this->load->view('master/penunjang_laboratorium/sample');
 	}
+
+	public function kategori()
+	{
+		//$this->load->view('welcome_message');
+		$this->load->view('master/penunjang_laboratorium/kategori');
+	}
+
+	public function laboratorium()
+	{
+		//$this->load->view('welcome_message');
+		$this->load->view('master/penunjang_laboratorium/master_data_laboratorium');
+	}
+
 }

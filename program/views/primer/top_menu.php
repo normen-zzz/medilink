@@ -1,9 +1,14 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
-<?php $mvisitkonsul=array('tarif-visitkonsul'); ?>
+<?php $mvisitkonsul=array('visite'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
+
 <?php $mlab=array('sample', 'metode', 'categories', 'master-data-lab','group-pemeriksaan','harga-biaya'); ?>
+
+<?php $mlaboratorium=array('kategori-laboratorium', 'data-laboratorium'); ?>
+<?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
+
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
@@ -47,7 +52,7 @@
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="tarif-visitkonsul">Tarif Visite dan Konsul</a></li>
+		<li><a href="visite">Tarif Visite dan Konsul</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
@@ -65,6 +70,7 @@
 	</div>
 <?php } ?>
 
+
 <?php if(in_array($this->uri->segment('1'),$mlab)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
@@ -75,6 +81,32 @@
 		<li><a href="#">Master Data Laboraturium</a></li>
 		<li><a href="group-pemeriksaan">Group Pemeriksaan</a></li>
 		<li><a href="harga-biaya">Harga/Biaya Pemeriksaan Perkelas</a></li>
+		
+<?php } ?>
+
+<?php if(in_array($this->uri->segment('1'),$mlaboratorium)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="Sample">Sample</a></li>
+		<li><a href="-">Metode</a></li>
+		<li><a href="kategori-laboratorium">Kategori</a></li>
+		<li><a href="data-laboratorium">Data Laboratorium</a></li>
+		<li><a href="-">Grup Pemeriksaan</a></li>
+		<li><a href="-">Biaya Pemeriksaan (perkelas)</a></li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+<?php if(in_array($this->uri->segment('1'),$moperasi)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="jenis-operasi">Jenis Operasi</a></li>
+		<li><a href="item-operasi">Master Item Operasi</a></li>
+		<li><a href="tarif-operasi">Tarif Operasi</a></li>
+		<li><a href="tarif-operasi-perkelas">Tarif Operasi Per-Kelas</a></li>
+
 	  </ul>         
 	</div>
 <?php } ?>
