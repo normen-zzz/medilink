@@ -2,7 +2,7 @@
 <?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
 <?php $mvisitkonsul=array('tarif-visitkonsul'); ?>
-<?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas'); ?>
+<?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
@@ -59,6 +59,7 @@
 		<li><a href="type">Gizi Type</a></li>
 		<li><a href="gizi">Gizi</a></li>
 		<li><a href="gizi-kelas">Gizi (Kelas)</a></li>
+		<li><a href="gizi-detail">Gizi Detail</a></li>
 	  </ul>         
 	</div>
 <?php } ?>

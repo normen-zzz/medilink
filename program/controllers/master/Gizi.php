@@ -37,4 +37,8 @@ class Gizi extends MBELINK_Controller {
 	public function kelas(){
         $this->load->view('master/gizi/kelas');
     }
+	
+	public function detail(){
+        $this->load->view('master/gizi/detail');
+    }
 }

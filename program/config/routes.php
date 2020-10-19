@@ -39,4 +39,5 @@ $route['bahan'] = 'master/gizi';
 $route['type'] = 'master/gizi/type';
 $route['gizi'] = 'master/gizi/gizi';
 $route['gizi-kelas'] = 'master/gizi/kelas';
+$route['gizi-detail'] = 'master/gizi/detail';
 // End Of master Gizi
