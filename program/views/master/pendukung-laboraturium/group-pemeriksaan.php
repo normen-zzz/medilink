@@ -259,7 +259,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Detail : <i>BPJS Ketenagakerjaan</i></h4>
+                    <h4 class="modal-title">Entry Data Laboraturium Group : <i>Darah Lengkap</i></h4>
                     <button type="button" class="btn btn-primary mt-12" data-toggle="modal"
                         data-target="#modal-tambahdeskripsi">Tambah Data</button>
                 </div>
