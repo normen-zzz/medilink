@@ -23,6 +23,6 @@ class Tarif_visitkonsul extends MBELINK_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('master/tarif_visitkonsul/tarif');
+		$this->load->view('master/visite');
 	}
 }

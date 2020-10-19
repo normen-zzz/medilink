@@ -47,7 +47,7 @@
 	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
-		<li><a href="tarif-visitkonsul">Tarif Visite dan Konsul</a></li>
+		<li><a href="visite">Tarif Visite dan Konsul</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
