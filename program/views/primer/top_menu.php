@@ -7,7 +7,7 @@
 
 <?php $mlab=array('sample', 'metode-laboratorium', 'kategori-laboratorium', 'data-laboratorium','group-pemeriksaan','harga-biaya'); ?>
 
-<
+
 <?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
 
 
