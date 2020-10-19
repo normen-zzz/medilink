@@ -71,5 +71,10 @@ class Medis extends MBELINK_Controller {
 		//$this->load->view('welcome_message');
 		$this->load->view('master/bed');
 	}
+	public function visite()
+	{
+		//$this->load->view('welcome_message');
+		$this->load->view('master/visite');
+	}
 
 }

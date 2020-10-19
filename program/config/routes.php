@@ -27,3 +27,4 @@ $route['kategori'] = 'master/medis/kategori';
 $route['penunjang'] = 'master/medis/penunjang';
 $route['kamar'] = 'master/medis/kamar';
 $route['bed'] = 'master/medis/bed';
+$route['visite'] = 'master/medis/visite';

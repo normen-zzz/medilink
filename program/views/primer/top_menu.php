@@ -1,6 +1,7 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <?php $mtindakan=array('daftar-data-tindakan','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
 <?php $mrawatinap=array('nurse-station','kelas','kamar','bed','penunjang','kategori'); ?>
+<?php $mvisite=array('visite'); ?>
 
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
@@ -40,4 +41,28 @@
 	  </ul>         
 	</div>
 <?php } ?>
+
+
+<?php if(in_array($this->uri->segment('1'),$mvisite)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="visite">Tarif Visit dan Konsult Dokter</a></li>
+		  </ul>
+		</li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+
+
+
+
+
+
+
+
+
+
+
 
