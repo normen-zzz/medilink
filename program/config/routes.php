@@ -30,6 +30,11 @@ $route['bed'] = 'master/rawat_inap/bed';
 $route['penunjang'] = 'master/rawat_inap/penunjang';
 // End Of Rawat Inap
 
+// Radiologi
+$route['radiologi'] = 'master/Master_radiologi/radiologi';
+$route['biayaradiologi'] = 'master/Master_radiologi/biayaradiologi';
+// End Of Radiologi
+
 // Master tarif visit dan konsul
 $route['visite'] = 'master/Tarif_visitkonsul';
 // End Of master visit dan konsul
