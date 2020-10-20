@@ -94,12 +94,13 @@
 	  <ul class="nav navbar-nav">
 		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
 		<li><a href="sample">Sample</a></li>
-		<li><a href="metode-laboratorium">Metode Data Laboraturium</a></li>
-		<li><a href="kategori-laboratorium">Categories</a></li>
+		<li><a href="metode-laboratorium">Metode</a></li>
+		<li><a href="kategori-laboratorium">Kategori</a></li>
 		<li><a href="data-laboratorium">Master Data Laboraturium</a></li>
-		<li><a href="group-pemeriksaan">Group Pemeriksaan</a></li>
-		<li><a href="harga-biaya">Harga/Biaya Pemeriksaan Perkelas</a></li>
-		
+		<li><a href="group-pemeriksaan">Grup Pemeriksaan</a></li>
+		<li><a href="harga-biaya">Biaya Pemeriksaan Perkelas</a></li>
+	</ul>
+</div>
 <?php } ?>
 
  
