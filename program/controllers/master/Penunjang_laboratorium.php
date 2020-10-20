@@ -26,6 +26,12 @@ class Penunjang_laboratorium extends MBELINK_Controller {
 		$this->load->view('master/penunjang_laboratorium/sample');
 	}
 
+	public function metode()
+	{
+		//$this->load->view('welcome_message');
+		$this->load->view('master/penunjang_laboratorium/metode');
+	}
+
 	public function kategori()
 	{
 		//$this->load->view('welcome_message');
@@ -37,5 +43,13 @@ class Penunjang_laboratorium extends MBELINK_Controller {
 		//$this->load->view('welcome_message');
 		$this->load->view('master/penunjang_laboratorium/master_data_laboratorium');
 	}
+
+	public function group_pem(){
+        $this->load->view('master/pendukung-laboraturium/group-pemeriksaan');
+    }
+
+    public function harga_biaya(){
+        $this->load->view('master/pendukung-laboraturium/harga-biaya');
+    }
 
 }
