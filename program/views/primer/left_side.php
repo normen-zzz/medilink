@@ -47,7 +47,7 @@
             <li><a href="visite"><i class="fa fa-circle-o"></i> Tarif Visit dan Konsul Dokter</a></li>
             <li><a href="bahan"><i class="fa fa-circle-o"></i>Gizi</a></li>
 
-            <li><a href="group-pemeriksaan"><i class="fa fa-circle-o"></i>Penunjang Laboraturium</a></li>
+            <li><a href="sample"><i class="fa fa-circle-o"></i>Penunjang Laboraturium</a></li>
 
             
             <li><a href="jenis-operasi"><i class="fa fa-circle-o"></i>Penunjang Operasi</a></li>
