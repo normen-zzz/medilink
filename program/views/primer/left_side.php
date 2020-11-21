@@ -42,7 +42,7 @@
           <ul class="treeview-menu">
             <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
             <li><a href="master-medis"><i class="fa fa-circle-o"></i> Tindakan/Diagnosa</a></li>
-			      <li><a href="rawat-inap"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
+            <li><a href="rawat-inap"><i class="fa fa-circle-o"></i> Rawat Inap</a></li>
             <li><a href="radiologi"><i class="fa fa-circle-o"></i> Radiologi</a></li>
             <li><a href="visite"><i class="fa fa-circle-o"></i> Tarif Visit dan Konsul Dokter</a></li>
             <li><a href="bahan"><i class="fa fa-circle-o"></i>Gizi</a></li>
@@ -51,6 +51,20 @@
 
             
             <li><a href="jenis-operasi"><i class="fa fa-circle-o"></i>Penunjang Operasi</a></li>
+
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cogs"></i> <span>Registrasi & Admisi</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
+            <li><a href="master-medis"><i class="fa fa-circle-o"></i>Registrasi Pasien</a></li>
 
           </ul>
         </li>
