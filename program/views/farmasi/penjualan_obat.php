@@ -101,7 +101,20 @@
 								<form class="form-horizontal">
 								  <div class="box-body">
 									<div class="form-group">
-									  <label for="inputEmail3" class="col-sm-10 control-label ">No. Antrian</label>
+									  <label for="inputEmail3" class="col-sm-2 control-label">Id Penjualan</label>
+									  <div class="col-sm-2">
+										<input type="email" class="form-control" id="inputEmail3" placeholder="0">
+									  </div>
+									  <label for="inputEmail3" class="col-sm-1 control-label ">Tanggal</label>
+									  <div class="col-sm-3">
+										<div class="input-group date">
+										  <div class="input-group-addon">
+											<i class="fa fa-calendar"></i>
+										  </div>
+										  <input type="text" class="form-control pull-right" id="datepicker">
+										</div>
+									  </div>
+									  <label for="inputEmail3" class="col-sm-2 control-label ">No. Antrian</label>
 									  <div class="col-sm-2">
 										<input type="email" class="form-control" id="inputEmail3" placeholder="0">
 									  </div>
@@ -365,6 +378,10 @@
                 'autoWidth': false
             })
         })
+		//Date picker
+		$('#datepicker').datepicker({
+		  autoclose: true
+		})
     </script>
 
 </body>
