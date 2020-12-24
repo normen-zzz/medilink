@@ -66,3 +66,8 @@ $route['tarif-operasi'] = 'master/penunjang_operasi/tarif';
 $route['tarif-operasi-perkelas'] = 'master/penunjang_operasi/tarif_perkelas';
 // End Of master penunjang operasi
 
+//Farmasi
+$route['penjualan'] = 'farmasi/farmasi/penjualan';
+$route['pembelian-obat'] = '#';
+$route['resep-obat'] = '#';
+//End Farmasi
