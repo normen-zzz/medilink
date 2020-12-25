@@ -72,15 +72,27 @@
 		<li class="treeview">
           <a href="#">
             <i class="fa fa-cogs"></i> <span>Farmasi</span>
+            <ul class="treeview-menu">
+            <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
+            <li><a href="penjualan"><i class="fa fa-circle-o"></i>Penjualan Obat</a></li>
+            <li><a href="rawat-inap"><i class="fa fa-circle-o"></i>Pembelian Obat</a></li>
+            <li><a href="radiologi"><i class="fa fa-circle-o"></i> Resep Obat</a></li>
+
+
+          </ul>
+        </a>
+      </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cogs"></i> <span>Rawat Inap</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
             <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
-            <li><a href="penjualan"><i class="fa fa-circle-o"></i>Penjualan Obat</a></li>
-            <li><a href="rawat-inap"><i class="fa fa-circle-o"></i>Pembelian Obat</a></li>
-            <li><a href="radiologi"><i class="fa fa-circle-o"></i> Resep Obat</a></li>
+            <li><a href="visite-dokter"><i class="fa fa-circle-o"></i>Rekening Rawat Inap</a></li>
 
           </ul>
         </li>
