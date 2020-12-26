@@ -27,7 +27,7 @@ $route['kelas'] = 'master/rawat_inap/kelas';
 $route['kategori'] = 'master/rawat_inap/kategori';
 $route['kamar'] = 'master/rawat_inap/kamar';
 $route['bed'] = 'master/rawat_inap/bed';
-$route['penunjang'] = 'master/rawat_inap/penunjang';
+$route['master-penunjang'] = 'master/rawat_inap/penunjang';
 // End Of Rawat Inap
 
 // Radiologi
@@ -73,6 +73,16 @@ $route['resep-obat'] = '#';
 //RAWAT INAP
 $route['visite-dokter'] = 'rawatinap/rekeningrawatinap';
 $route['dpjp'] = 'rawatinap/rekeningrawatinap/dpjp';
+$route['tindakan'] = 'rawatinap/rekeningrawatinap/tindakan';
+$route['penunjang'] = 'rawatinap/rekeningrawatinap/penunjang';
+$route['lain-lain'] = 'rawatinap/rekeningrawatinap/lainlain';
+$route['gizipasien'] = 'rawatinap/rekeningrawatinap/gizipasien';
+$route['diagnosapasien'] = 'rawatinap/rekeningrawatinap/diagnosapasien';
+
+
+
+
+
 
 
 

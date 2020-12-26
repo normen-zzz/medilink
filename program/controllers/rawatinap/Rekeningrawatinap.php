@@ -30,4 +30,24 @@ class Rekeningrawatinap extends MBELINK_Controller {
 		$this->load->view('rawatinap/dpjp');
 	}
 
+	public function tindakan(){
+		$this->load->view('rawatinap/tindakan');
+	}
+
+	public function penunjang(){
+		$this->load->view('rawatinap/penunjang');
+	}
+
+	public function lainlain(){
+		$this->load->view('rawatinap/lain-lain');
+	}
+
+	public function gizipasien(){
+		$this->load->view('rawatinap/gizipasien');
+	}
+
+	public function diagnosapasien(){
+		$this->load->view('rawatinap/diagnosapasien');
+	}
+
 }

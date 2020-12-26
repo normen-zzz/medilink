@@ -1,6 +1,6 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <?php $mtindakan=array('master-medis','biaya-tindakan-perkelas', 'diagnosa', 'diagnosa-asuransi', 'tindakandiagnosa','tarif-asuransi'); ?>
-<?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','penunjang','kategori'); ?>
+<?php $mrawatinap=array('rawat-inap','kelas','kamar','bed','master-penunjang','kategori'); ?>
 <?php $mradiologi=array('radiologi','biayaradiologi'); ?>
 <?php $mvisitkonsul=array('visite'); ?>
 <?php $mgizi=array('bahan', 'gizi', 'type', 'gizi-kelas','gizi-detail'); ?>
@@ -9,6 +9,8 @@
 
 
 <?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
+<?php $rawatinap=array('visite-dokter', 'dpjp', 'tindakan', 'penunjang','lain-lain','gizipasien','diagnosapasien'); ?>
+
 
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
@@ -114,6 +116,22 @@
 		<li><a href="tarif-operasi">Tarif Operasi</a></li>
 		<li><a href="tarif-operasi-perkelas">Tarif Operasi Per-Kelas</a></li>
 
+	  </ul>         
+	</div>
+<?php } ?>
+
+
+<?php if(in_array($this->uri->segment('1'),$rawatinap)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="visite-dokter">Visite-Dokter</a></li>
+		<li><a href="dpjp">DPJP</a></li>
+		<li><a href="tindakan">Tindakan</a></li>
+		<li><a href="penunjang">Penunjang</a></li>
+		<li><a href="lain-lain">Lain-Lain</a></li>
+		<li><a href="gizipasien">Gizi Pasien</a></li>
+		<li><a href="diagnosapasien">Diagnosa Pasien</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
