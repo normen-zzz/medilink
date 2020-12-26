@@ -64,7 +64,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
     <section class="content-header">
       <h1>
         Rekening Rawat Inap
-        <small>Diagnosa</small>
+        <small>Administrasi</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -184,13 +184,13 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
 
                   </div>
-                  <h3>Entry Diagnosa Pasien</h3>
+                  <h3>Entry Transaksi</h3>
                   <form class="form-horizontal">
                     <div class="box-body">
 
 
-                      <label for="inputEmail3" class="col-sm-1">Gizi</label>
-                      <div class="col-sm-3">
+                      <label for="inputEmail3" class="col-sm-1">Item Biaya</label>
+                      <div class="col-sm-1">
                         <select class="form-control">
                           <option>option 1</option>
                           <option>option 2</option>
@@ -200,18 +200,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         </select>
                       </div>
 
-                      <label for="inputEmail3" class="col-sm-1">Waktu</label>
-                      <div class="col-sm-3">
-                        <select class="form-control">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
-                        </select>
-                      </div>
-
-                      <label class="col-sm-1">Date</label>
+                      <label class="col-sm-1">Tanggal</label>
                       <div class="col-sm-3">
                         <div class="input-group date">
                           <div class="input-group-addon">
@@ -221,21 +210,42 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         </div>
                       </div>
 
-                    <label for="inputPassword3" class="col-sm-1">Kode ICD</label>
+                    <label for="inputPassword3" class="col-sm-1">Poli</label>
                       <div class="col-sm-2">
                         <input type="number" class="form-control" id="inputEmail3" placeholder="">
                       </div>
 
-                      <label for="inputPassword3" class="col-sm-1">Nama ICD</label>
+                      <label for="inputPassword3" class="col-sm-1">Biaya</label>
                       <div class="col-sm-2">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                        <input type="number" class="form-control" id="inputEmail3" placeholder="0">
                       </div>
 
-                      <label for="inputPassword3" class="col-sm-1">Ditetapkan Oleh</label>
+                      <label for="inputPassword3" class="col-sm-1">T/k</label>
                       <div class="col-sm-2">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                        <input type="number" class="form-control" id="inputEmail3" placeholder="0">
                       </div>
 
+                      
+
+
+                      
+
+                    </div>
+
+
+<h3>Entry Pelaksana</h3>
+                    <form class="form-horizontal">
+                    <div class="box-body">
+
+                      <label for="inputPassword3" class="col-sm-1">No</label>
+                      <div class="col-sm-1">
+                        <input type="number" class="form-control" id="inputEmail3" placeholder="0">
+                      </div>   
+
+                      <label for="inputPassword3" class="col-sm-1">Pelaksana</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                      </div>   
 
                       <button type="submit" class="btn btn-danger pull-right">Batal</button>
                       <button type="submit" class="btn btn-info pull-right">simpan</button>
@@ -248,18 +258,18 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
                     <!-- /.box-body -->
                     <div class="box">
+                      <h3>TABEL Penunjang</h3>
                       <!-- /.box-header -->
                       <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
                           <thead>
                             <tr>
                               <th>No</th>
-                              <th>Awal/Akhir</th>
                               <th>Tanggal</th>
-                              <th>Waktu</th>
-                              <th>Kode ICD</th>
-                              <th>Nama ICD</th>
-                              <th>Ditetapkan Oleh</th>
+                              <th>Poli</th>
+                              <th>Item_Biaya</th>
+                              <th>Biaya</th>
+                              <th>T/K</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -270,8 +280,28 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                               <td>-</td>
                               <td>-</td>
                               <td>-</td>
-                              <td>-</td>
 
+                            </tr>
+                          </table>
+                        </div>
+                        <!-- /.box-body -->
+                      </div>
+
+                              <div class="box">
+                      <h3>TABEL Pelaksana</h3>
+                      <!-- /.box-header -->
+                      <div class="box-body">
+                        <table id="example2" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Pelaksana</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>-</td>
 
                             </tr>
                           </table>

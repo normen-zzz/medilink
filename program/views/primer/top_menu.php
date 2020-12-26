@@ -9,7 +9,7 @@
 
 
 <?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
-<?php $rawatinap=array('visite-dokter', 'dpjp', 'tindakan', 'penunjang','lain-lain','gizipasien','diagnosapasien'); ?>
+<?php $rawatinap=array('visite-dokter', 'dpjp', 'tindakan', 'penunjang','lain-lain','gizipasien','diagnosapasien','administrasi'); ?>
 
 
 
@@ -132,6 +132,7 @@
 		<li><a href="lain-lain">Lain-Lain</a></li>
 		<li><a href="gizipasien">Gizi Pasien</a></li>
 		<li><a href="diagnosapasien">Diagnosa Pasien</a></li>
+		<li><a href="administrasi">Administrasi</a></li>
 	  </ul>         
 	</div>
 <?php } ?>

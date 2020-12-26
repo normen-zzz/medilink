@@ -78,6 +78,8 @@ $route['penunjang'] = 'rawatinap/rekeningrawatinap/penunjang';
 $route['lain-lain'] = 'rawatinap/rekeningrawatinap/lainlain';
 $route['gizipasien'] = 'rawatinap/rekeningrawatinap/gizipasien';
 $route['diagnosapasien'] = 'rawatinap/rekeningrawatinap/diagnosapasien';
+$route['administrasi'] = 'rawatinap/rekeningrawatinap/administrasi';
+
 
 
 

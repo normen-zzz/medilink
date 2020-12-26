@@ -50,4 +50,8 @@ class Rekeningrawatinap extends MBELINK_Controller {
 		$this->load->view('rawatinap/diagnosapasien');
 	}
 
+	public function administrasi(){
+		$this->load->view('rawatinap/administrasi');
+	}
+
 }
