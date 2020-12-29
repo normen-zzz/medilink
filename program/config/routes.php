@@ -70,7 +70,7 @@ $route['penjualan'] = 'farmasi/farmasi/penjualan';
 $route['pembelian-obat'] = '#';
 $route['resep-obat'] = '#';
 //End Farmasi
-//RAWAT INAP
+//Rawat inap
 $route['visite-dokter'] = 'rawatinap/rekeningrawatinap';
 $route['dpjp'] = 'rawatinap/rekeningrawatinap/dpjp';
 $route['tindakan'] = 'rawatinap/rekeningrawatinap/tindakan';
@@ -79,6 +79,18 @@ $route['lain-lain'] = 'rawatinap/rekeningrawatinap/lainlain';
 $route['gizipasien'] = 'rawatinap/rekeningrawatinap/gizipasien';
 $route['diagnosapasien'] = 'rawatinap/rekeningrawatinap/diagnosapasien';
 $route['administrasi'] = 'rawatinap/rekeningrawatinap/administrasi';
+//End Rawat inap
+//Poliklinik
+$route['visite-dokter-poli'] = 'poliklinik/rekeningrawatjalan';
+$route['dpjp-poli'] = 'poliklinik/rekeningrawatjalan/dpjp_poli';
+$route['tindakan-poli'] = 'poliklinik/rekeningrawatjalan/tindakan_poli';
+$route['operasi-poli'] = 'poliklinik/rekeningrawatjalan/operasi_poli';
+$route['penunjang-poli'] = 'poliklinik/rekeningrawatjalan/penunjang_poli';
+$route['lain-lain-poli'] = 'poliklinik/rekeningrawatjalan/lainlain_poli';
+$route['gizipasien-poli'] = 'poliklinik/rekeningrawatjalan/gizipasien_poli';
+$route['diagnosapasien-poli'] = 'poliklinik/rekeningrawatjalan/diagnosapasien_poli';
+$route['administrasi-poli'] = 'poliklinik/rekeningrawatjalan/administrasi_poli';
+//End Poliklinik
 
 
 

@@ -11,6 +11,7 @@
 <?php $moperasi=array('jenis-operasi', 'item-operasi', 'tarif-operasi', 'tarif-operasi-perkelas'); ?>
 <?php $rawatinap=array('visite-dokter', 'dpjp', 'tindakan', 'penunjang','lain-lain','gizipasien','diagnosapasien','administrasi'); ?>
 
+<?php $poliklinik=array('visite-dokter-poli', 'dpjp-poli', 'tindakan-poli', 'operasi-poli', 'penunjang-poli','lain-lain-poli','gizipasien-poli','diagnosapasien-poli','administrasi-poli'); ?>
 
 
 <?php if(in_array($this->uri->segment('1'),$mtindakan)){ ?>
@@ -133,6 +134,24 @@
 		<li><a href="gizipasien">Gizi Pasien</a></li>
 		<li><a href="diagnosapasien">Diagnosa Pasien</a></li>
 		<li><a href="administrasi">Administrasi</a></li>
+	  </ul>         
+	</div>
+<?php } ?>
+
+
+<?php if(in_array($this->uri->segment('1'),$poliklinik)){ ?>
+	<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<!--li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li-->
+		<li><a href="visite-dokter-poli">Visite-Dokter</a></li>
+		<li><a href="dpjp-poli">DPJP</a></li>
+		<li><a href="tindakan-poli">Tindakan/Perawatan</a></li>
+		<li><a href="operasi-poli">Operasi</a></li>
+		<li><a href="penunjang-poli">Penunjang</a></li>
+		<li><a href="lain-lain-poli">Lain-Lain</a></li>
+		<li><a href="gizipasien-poli">Gizi Pasien</a></li>
+		<li><a href="diagnosapasien-poli">Diagnosa Pasien</a></li>
+		<li><a href="administrasi-poli">Administrasi</a></li>
 	  </ul>         
 	</div>
 <?php } ?>
