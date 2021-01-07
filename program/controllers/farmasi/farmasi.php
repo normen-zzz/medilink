@@ -29,12 +29,12 @@ class Farmasi extends MBELINK_Controller {
     public function pembelian()
     {
         //$this->load->view('welcome_message');
-		$this->load->view('farmasi/penjualan_obat');
+		$this->load->view('farmasi/pembelian_obat');
     }
 	
-	public function resep()
+	public function data_obat()
     {
         //$this->load->view('welcome_message');
-		$this->load->view('farmasi/penjualan_obat');
+		$this->load->view('farmasi/data_obat');
     }
 }
